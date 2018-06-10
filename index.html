@@ -1,0 +1,48 @@
+<!-- HTML5 Standard Click Tag -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dynamic images with javascript
+    </title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript">
+    
+        function setPicture() {
+        var img = document.getElementById("selecteddropdown");
+        var value = img.options[img.selectedIndex].value;
+        var imgloc=document.getElementById('imgswap').src;
+              imgloc=value;
+              document.getElementById('imgswap').src=imgloc;
+       
+    }     
+   
+              
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+   <img src="./images/bathroom.jpg" class="bathroom image" id="imgswap">
+   <form id="home-pic">
+    <select id="selecteddropdown" onchange="setPicture();">
+        <option value="./images/bathroom.jpg">Select a photo</option>
+        <option value="./images/bedroom1.PNG">Bedroom</option>
+        <option value="./images/bedroom2.PNG">More Bedroom</option>
+        <option value="./images/bathroom.jpg">Bathroom</option>
+        <option value="./images/livingroom.jpg">Living room</option>
+        <option value="./images/kitchen.PNG">Kitchen</option>
+        
+        
+    </select>
+
+    </form>
+    </div>
+    </div>
+    
+</body>
+
+</html>
