@@ -1,2 +1,3 @@
-# dynamic-banner
-Dynamic Banner with Javascript
+# dynamic-image-update with javascript
+
+
